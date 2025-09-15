@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --pump-green: 0 255 135;
+    --deep-black: 12 12 12;
+    --neon-pink: 255 47 185;
+    --electric-blue: 0 209 255;
+    --charcoal-purple: 42 14 59;
+  }
+
+  body {
+    @apply bg-deep-black;
+    background-image:
+      linear-gradient(rgba(0, 255, 135, 0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0, 255, 135, 0.03) 1px, transparent 1px);
+    background-size: 50px 50px;
+  }
+}
+
+@layer components {
+  .card-bronze {
+    @apply bg-gradient-to-br from-gray-800 to-gray-900 border-2 border-pump-green/30;
+  }
+
+  .card-silver {
+    @apply bg-gradient-to-br from-gray-600 to-gray-700 border-2 border-pump-green/50;
+    box-shadow: 0 0 20px rgba(0, 255, 135, 0.3);
+  }
+
+  .card-gold {
+    @apply bg-gradient-to-br from-yellow-600 to-yellow-700 border-2 border-pump-green;
+    box-shadow: 0 0 30px rgba(0, 255, 135, 0.5);
+    animation: shimmer 3s linear infinite;
+  }
+
+  .card-diamond {
+    @apply bg-gradient-to-br from-cyan-400 to-blue-500 border-2 border-electric-blue;
+    box-shadow: 0 0 40px rgba(0, 209, 255, 0.6);
+    animation: pulse-glow 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  .card-mythic {
+    @apply bg-gradient-to-br from-purple-600 via-pink-500 to-electric-blue border-2;
+    border-image: linear-gradient(45deg, #00FF87, #FF2FB9, #00D1FF) 1;
+    box-shadow:
+      0 0 50px rgba(255, 47, 185, 0.5),
+      0 0 100px rgba(0, 209, 255, 0.3);
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .glow-button {
+    @apply relative overflow-hidden transition-all duration-300;
+  }
+
+  .glow-button::before {
+    @apply absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent;
+    content: '';
+    transform: translateX(-100%);
+    transition: transform 0.3s;
+  }
+
+  .glow-button:hover::before {
+    transform: translateX(100%);
+  }
+}
+
+@layer utilities {
+  .text-glow {
+    text-shadow: 0 0 10px currentColor;
+  }
+
+  .neon-border {
+    box-shadow:
+      0 0 5px #00FF87,
+      0 0 10px #00FF87,
+      0 0 15px #00FF87,
+      0 0 20px #00FF87;
+  }
+}
