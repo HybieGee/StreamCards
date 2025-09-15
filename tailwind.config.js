@@ -8,11 +8,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'pump-green': '#00FF87',
-        'deep-black': '#0C0C0C',
-        'neon-pink': '#FF2FB9',
-        'electric-blue': '#00D1FF',
-        'charcoal-purple': '#2A0E3B',
+        'pump-green': 'rgb(var(--pump-green) / <alpha-value>)',
+        'deep-black': 'rgb(var(--deep-black) / <alpha-value>)',
+        'neon-pink': 'rgb(var(--neon-pink) / <alpha-value>)',
+        'electric-blue': 'rgb(var(--electric-blue) / <alpha-value>)',
+        'charcoal-purple': 'rgb(var(--charcoal-purple) / <alpha-value>)',
       },
       animation: {
         'pulse-glow': 'pulse-glow 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',

@@ -277,4 +277,4 @@ adminRoutes.get('/tiers/:tier/benefits', async (c) => {
     console.error('Error fetching tier benefits:', error)
     return c.json({ error: 'Failed to fetch tier benefits' }, 500)
   }
-}))
+})
