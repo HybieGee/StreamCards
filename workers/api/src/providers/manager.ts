@@ -1,6 +1,7 @@
 import { StreamerProvider, StreamerData } from './base'
 import { HeliusProvider } from './helius'
 import { CommunityProvider } from './community'
+import { PumpFunProvider } from './PumpFunProvider'
 import { DemoProvider } from './demo'
 import type { Env } from '../index'
 
@@ -12,17 +13,24 @@ export class ProviderManager {
   }
 
   private initializeProviders(env: Env): void {
+    // Primary provider: pump.fun live data
+    const pumpFunProvider = new PumpFunProvider()
+    this.providers.push(pumpFunProvider)
+
+    // Secondary provider: Helius (if API key available)
     const heliusProvider = new HeliusProvider(env.HELIUS_API_KEY || '')
     this.providers.push(heliusProvider)
 
+    // Community providers (if URLs configured)
     const communityUrls = this.parseCommunityUrls(env)
     const communityProvider = new CommunityProvider(communityUrls)
     this.providers.push(communityProvider)
 
+    // Fallback: Demo data (only if no other providers work)
     const demoProvider = new DemoProvider()
     this.providers.push(demoProvider)
 
-    console.log(`Initialized ${this.providers.length} streamer providers`)
+    console.log(`Initialized ${this.providers.length} streamer providers (pump.fun, helius, community, demo)`)
   }
 
   private parseCommunityUrls(env: Env): string[] {

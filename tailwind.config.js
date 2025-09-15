@@ -10,9 +10,11 @@ module.exports = {
       colors: {
         'pump-green': 'rgb(var(--pump-green) / <alpha-value>)',
         'deep-black': 'rgb(var(--deep-black) / <alpha-value>)',
+        'card-black': 'rgb(var(--card-black) / <alpha-value>)',
         'neon-pink': 'rgb(var(--neon-pink) / <alpha-value>)',
         'electric-blue': 'rgb(var(--electric-blue) / <alpha-value>)',
         'charcoal-purple': 'rgb(var(--charcoal-purple) / <alpha-value>)',
+        'cyber-purple': 'rgb(var(--cyber-purple) / <alpha-value>)',
       },
       animation: {
         'pulse-glow': 'pulse-glow 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',

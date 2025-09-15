@@ -6,7 +6,7 @@ import { Footer } from '@/components/layout/Footer'
 
 export default function HomePage() {
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen pt-20">
       <Header />
       <Hero />
       <FeaturedStreamers />
