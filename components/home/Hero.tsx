@@ -12,29 +12,29 @@ export function Hero() {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Animated Background */}
       <div className="absolute inset-0">
-        <div className="absolute inset-0 bg-gradient-to-br from-pump-green/10 via-transparent to-electric-blue/10" />
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-pump-green/5 rounded-full blur-3xl animate-pulse" />
-        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-neon-pink/5 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '2s' }} />
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-electric-blue/3 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '4s' }} />
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-secondary/10" />
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl animate-pulse" />
+        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-accent/5 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '2s' }} />
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-secondary/3 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '4s' }} />
       </div>
 
       {/* Content */}
       <div className="max-w-7xl mx-auto px-6 text-center relative z-10">
         {/* Badge */}
         <div className="inline-flex items-center space-x-2 holo-card rounded-full px-8 py-3 mb-8 group hover:scale-105 transition-transform duration-300">
-          <Sparkles className="w-5 h-5 text-pump-green animate-pulse" />
-          <span className="cyber-text text-sm bg-gradient-to-r from-pump-green to-electric-blue bg-clip-text text-transparent">
+          <Sparkles className="w-5 h-5 text-primary animate-pulse" />
+          <span className="cyber-text text-sm bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
             Live Trading Cards for Pump.fun Streamers
           </span>
-          <Sparkles className="w-5 h-5 text-electric-blue animate-pulse" style={{ animationDelay: '1s' }} />
+          <Sparkles className="w-5 h-5 text-secondary animate-pulse" style={{ animationDelay: '1s' }} />
         </div>
 
         {/* Main Headline */}
         <h1 className="cyber-text text-6xl md:text-8xl lg:text-9xl mb-8 leading-none">
-          <span className="block bg-gradient-to-r from-pump-green via-electric-blue to-neon-pink bg-clip-text text-transparent cyber-glow">
+          <span className="block bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent cyber-glow">
             Collect the Pump
           </span>
-          <span className="block bg-gradient-to-r from-neon-pink via-electric-blue to-pump-green bg-clip-text text-transparent cyber-glow mt-4">
+          <span className="block bg-gradient-to-r from-accent via-secondary to-primary bg-clip-text text-transparent cyber-glow mt-4">
             Stream the Future
           </span>
         </h1>
@@ -43,7 +43,7 @@ export function Hero() {
         <p className="text-xl md:text-2xl text-gray-300 mb-12 max-w-4xl mx-auto leading-relaxed">
           Dynamic NFT trading cards that evolve with streamer performance.
           <br className="hidden md:block" />
-          Mint cards of your favorite <span className="text-pump-green font-semibold">pump.fun</span> streamers and watch their value change in real-time.
+          Mint cards of your favorite <span className="text-primary font-semibold">pump.fun</span> streamers and watch their value change in real-time.
         </p>
 
         {/* CTA Buttons */}
@@ -68,12 +68,12 @@ export function Hero() {
           {/* Dynamic Pricing */}
           <div className="holo-card p-8 rounded-2xl group hover:scale-105 transition-all duration-300">
             <div className="relative mb-6">
-              <div className="w-20 h-20 mx-auto bg-gradient-to-br from-pump-green/20 to-pump-green/5 rounded-2xl flex items-center justify-center group-hover:shadow-lg group-hover:shadow-pump-green/20 transition-all duration-300">
-                <TrendingUp className="w-10 h-10 text-pump-green" />
+              <div className="w-20 h-20 mx-auto bg-gradient-to-br from-primary/20 to-primary/5 rounded-2xl flex items-center justify-center group-hover:shadow-lg group-hover:shadow-primary/20 transition-all duration-300">
+                <TrendingUp className="w-10 h-10 text-primary" />
               </div>
-              <div className="absolute inset-0 bg-pump-green/10 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              <div className="absolute inset-0 bg-primary/10 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             </div>
-            <h3 className="cyber-text text-xl mb-4 text-pump-green">⚡ Dynamic Pricing</h3>
+            <h3 className="cyber-text text-xl mb-4 text-primary">⚡ Dynamic Pricing</h3>
             <p className="text-gray-400 leading-relaxed">
               Card prices update in real-time based on streamer performance, gas generation, and viewer metrics
             </p>
@@ -82,12 +82,12 @@ export function Hero() {
           {/* Auto Discovery */}
           <div className="holo-card p-8 rounded-2xl group hover:scale-105 transition-all duration-300">
             <div className="relative mb-6">
-              <div className="w-20 h-20 mx-auto bg-gradient-to-br from-electric-blue/20 to-electric-blue/5 rounded-2xl flex items-center justify-center group-hover:shadow-lg group-hover:shadow-electric-blue/20 transition-all duration-300">
-                <Zap className="w-10 h-10 text-electric-blue" />
+              <div className="w-20 h-20 mx-auto bg-gradient-to-br from-secondary/20 to-secondary/5 rounded-2xl flex items-center justify-center group-hover:shadow-lg group-hover:shadow-secondary/20 transition-all duration-300">
+                <Zap className="w-10 h-10 text-secondary" />
               </div>
-              <div className="absolute inset-0 bg-electric-blue/10 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              <div className="absolute inset-0 bg-secondary/10 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             </div>
-            <h3 className="cyber-text text-xl mb-4 text-electric-blue">🔍 Auto Discovery</h3>
+            <h3 className="cyber-text text-xl mb-4 text-secondary">🔍 Auto Discovery</h3>
             <p className="text-gray-400 leading-relaxed">
               New streamers automatically discovered from pump.fun and cards generated instantly
             </p>
@@ -96,12 +96,12 @@ export function Hero() {
           {/* Tier Evolution */}
           <div className="holo-card p-8 rounded-2xl group hover:scale-105 transition-all duration-300">
             <div className="relative mb-6">
-              <div className="w-20 h-20 mx-auto bg-gradient-to-br from-neon-pink/20 to-neon-pink/5 rounded-2xl flex items-center justify-center group-hover:shadow-lg group-hover:shadow-neon-pink/20 transition-all duration-300">
-                <BarChart3 className="w-10 h-10 text-neon-pink" />
+              <div className="w-20 h-20 mx-auto bg-gradient-to-br from-accent/20 to-accent/5 rounded-2xl flex items-center justify-center group-hover:shadow-lg group-hover:shadow-accent/20 transition-all duration-300">
+                <BarChart3 className="w-10 h-10 text-accent" />
               </div>
-              <div className="absolute inset-0 bg-neon-pink/10 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              <div className="absolute inset-0 bg-accent/10 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             </div>
-            <h3 className="cyber-text text-xl mb-4 text-neon-pink">🚀 Tier Evolution</h3>
+            <h3 className="cyber-text text-xl mb-4 text-accent">🚀 Tier Evolution</h3>
             <p className="text-gray-400 leading-relaxed">
               Cards upgrade from Bronze → Silver → Gold → Diamond → Mythic as streamers hit milestones
             </p>
@@ -110,10 +110,10 @@ export function Hero() {
       </div>
 
       {/* Floating Elements */}
-      <div className="absolute top-20 left-10 w-3 h-3 bg-pump-green rounded-full animate-ping opacity-75" />
-      <div className="absolute top-40 right-20 w-2 h-2 bg-electric-blue rounded-full animate-ping opacity-50" style={{ animationDelay: '1s' }} />
-      <div className="absolute bottom-32 left-1/4 w-4 h-4 bg-neon-pink rounded-full animate-ping opacity-60" style={{ animationDelay: '2s' }} />
-      <div className="absolute bottom-20 right-10 w-2 h-2 bg-pump-green rounded-full animate-ping opacity-75" style={{ animationDelay: '3s' }} />
+      <div className="absolute top-20 left-10 w-3 h-3 bg-primary rounded-full animate-ping opacity-75" />
+      <div className="absolute top-40 right-20 w-2 h-2 bg-secondary rounded-full animate-ping opacity-50" style={{ animationDelay: '1s' }} />
+      <div className="absolute bottom-32 left-1/4 w-4 h-4 bg-accent rounded-full animate-ping opacity-60" style={{ animationDelay: '2s' }} />
+      <div className="absolute bottom-20 right-10 w-2 h-2 bg-primary rounded-full animate-ping opacity-75" style={{ animationDelay: '3s' }} />
     </section>
   )
 }

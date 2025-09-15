@@ -9,7 +9,13 @@
     "lint": "next lint",
     "type-check": "tsc --noEmit"
   },
-  "keywords": ["solana", "nft", "trading-cards", "pump.fun", "metaplex"],
+  "keywords": [
+    "solana",
+    "nft",
+    "trading-cards",
+    "pump.fun",
+    "metaplex"
+  ],
   "author": "HybieGee",
   "license": "MIT",
   "dependencies": {

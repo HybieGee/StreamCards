@@ -88,8 +88,8 @@ export function PremiumCard({
           </div>
 
           {isOwned && (
-            <div className="bg-pump-green/20 border border-pump-green/40 rounded-full px-2 py-1">
-              <span className="text-xs text-pump-green font-semibold">OWNED</span>
+            <div className="bg-primary/20 border border-primary/40 rounded-full px-2 py-1">
+              <span className="text-xs text-primary font-semibold">OWNED</span>
             </div>
           )}
         </div>
@@ -145,7 +145,7 @@ export function PremiumCard({
         <div className="grid grid-cols-2 gap-3 mb-4 flex-1">
           <div className="bg-black/30 rounded-lg p-3 backdrop-blur-sm">
             <div className="flex items-center space-x-2 mb-1">
-              <Eye className="w-4 h-4 text-electric-blue" />
+              <Eye className="w-4 h-4 text-secondary" />
               <span className="text-xs text-gray-400">Viewers</span>
             </div>
             <p className="text-lg font-bold text-white">{formatNumber(streamer.viewers)}</p>
@@ -153,7 +153,7 @@ export function PremiumCard({
 
           <div className="bg-black/30 rounded-lg p-3 backdrop-blur-sm">
             <div className="flex items-center space-x-2 mb-1">
-              <Zap className="w-4 h-4 text-pump-green" />
+              <Zap className="w-4 h-4 text-primary" />
               <span className="text-xs text-gray-400">Gas 24h</span>
             </div>
             <p className="text-lg font-bold text-white">{formatSol(streamer.gas_sol)}</p>
@@ -161,7 +161,7 @@ export function PremiumCard({
 
           <div className="bg-black/30 rounded-lg p-3 backdrop-blur-sm">
             <div className="flex items-center space-x-2 mb-1">
-              <TrendingUp className="w-4 h-4 text-neon-pink" />
+              <TrendingUp className="w-4 h-4 text-accent" />
               <span className="text-xs text-gray-400">Volume</span>
             </div>
             <p className="text-lg font-bold text-white">{formatSol(streamer.volume_sol)}</p>
@@ -169,7 +169,7 @@ export function PremiumCard({
 
           <div className="bg-black/30 rounded-lg p-3 backdrop-blur-sm">
             <div className="flex items-center space-x-2 mb-1">
-              <Users className="w-4 h-4 text-electric-blue" />
+              <Users className="w-4 h-4 text-secondary" />
               <span className="text-xs text-gray-400">Holders</span>
             </div>
             <p className="text-lg font-bold text-white">{formatNumber(streamer.holders)}</p>
@@ -181,7 +181,7 @@ export function PremiumCard({
           {mintPrice && (
             <div className="flex items-center justify-between mb-3">
               <span className="text-sm text-gray-400">Mint Price</span>
-              <span className="cyber-text text-lg text-pump-green">
+              <span className="cyber-text text-lg text-primary">
                 {formatSol(mintPrice)}
               </span>
             </div>
@@ -196,7 +196,7 @@ export function PremiumCard({
 
           {/* Action Button */}
           {isOwned ? (
-            <button className="w-full neon-button !py-3 !bg-gradient-to-r !from-pump-green !to-electric-blue">
+            <button className="w-full neon-button !py-3 !bg-gradient-to-r !from-primary !to-secondary">
               <Star className="w-4 h-4 mr-2" />
               View Details
             </button>
